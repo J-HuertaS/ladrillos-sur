@@ -9,7 +9,6 @@ export default function Hero() {
     sm:w-75
     px-7 
     py-3 
-    rounded-2xl 
     transition-all
     hover:scale-105
     hover:bg-[var(--color-primary-dark)]
@@ -20,7 +19,7 @@ export default function Hero() {
   `;
 
   const buttonStylesGreen = `
-    border-3 
+    border-2 
     border-[var(--color-accent)] 
     text-white 
     font-[600]
@@ -28,7 +27,6 @@ export default function Hero() {
     w-60
     sm:w-75
     py-3 
-    rounded-2xl 
     hover:bg-[var(--color-accent)]
     hover:scale-105
     active:scale-95
@@ -38,7 +36,7 @@ export default function Hero() {
   `;
 
   return (
-    <section className=" relative w-full h-[calc(100vh-6rem)] items-center justify-center bg-black/75">
+    <section className="flex relative w-full min-h-[calc(100dvh-6rem)] items-center justify-center bg-black/75 lg:block lg:h-[calc(100dvh-6rem)]">
       {/* 1. Fondo Base (Imagen de fondo estática) */}
       <div className="absolute inset-0">
         <img 
@@ -69,7 +67,7 @@ export default function Hero() {
         />
       </div>
       {/* 4. Contenido Principal (Texto y Botones) */}
-      <div className="relative flex flex-col items-center justify-center z-10 h-[calc(100vh-6rem)] lg:justify-between lg:items-stretch">
+      <div className="relative flex items-center justify-center z-10 h-full pb-10 lg:pb-0 lg:justify-between lg:items-stretch">
         {/* Bienvenida y botones */}
         <div className="flex flex-col gap-2 items-center lg:justify-start lg:pl-16 lg:items-start">
           <h1 className="text-5xl text-center font-thin text-[var(--color-white)] py-10 sm:text-7xl lg:text-5xl lg:text-left lg:py-0 lg:pt-14 lg:pb-4">
@@ -77,7 +75,7 @@ export default function Hero() {
           </h1>
           {/* Texto mobile */}
           <div className="md: items-end gap-4 pb-10 text-center lg:justify-end lg:items-end lg:pr-10 lg:hidden">
-            <p className="text-[var(--color-white)]">Más de 100 años, entregando calidad de vida</p>
+            <p className="text-[var(--color-white)]">Más de 60 años, entregando calidad de vida</p>
           </div>
             <button aria-label="Ver productos" className={`${buttonStylesOrange} cursor-pointer`}>
             Ver productos
@@ -89,7 +87,7 @@ export default function Hero() {
         
         {/* Texto desktop */}
         <div className="hidden lg:flex lg:justify-end lg:items-end lg:pr-16 lg:pb-6 lg:text-[1.65rem]">
-          <p className="text-[var(--color-white)] text-right">Más de 100 años, <br />entregando <span className="font-bold">calidad de vida</span></p>
+          <p className="text-[var(--color-white)] text-right">Más de 60 años, <br />entregando <span className="font-bold text-[var(--color-secondary)] italic">calidad de vida</span></p>
         </div>
       </div>
 

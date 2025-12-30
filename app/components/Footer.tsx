@@ -66,7 +66,7 @@ export default function Footer() {
                     
                 </div>   
             </div>
-            <p className="text-center pt-8 text-sm text-[var(--color-black)]">&copy; 2017 Ladrillos Sur. Todos los derechos reservados.</p>
+            <p className="text-center pt-8 text-sm text-[var(--color-black)]">&copy; 2026 Ladrillos Sur. Todos los derechos reservados.</p>
         </footer>
     );
 }

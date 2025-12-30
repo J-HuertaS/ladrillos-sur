@@ -4,18 +4,14 @@ import { useState } from "react";
 import { MessageCircle } from "lucide-react"
 import { Mail } from "lucide-react"
 import { FaWhatsapp } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Communication() {
     const [open, setOpen] = useState(false)
-    const openForm = () => {
-
-    }
-
 
     return (
         <div className="
             fixed bottom-6 right-6 z-50
-            scale-0 opacity-0
             animate-[fabIn_0.4s_ease-out_forwards]">
             <button 
                 onClick={() => setOpen(!open)}
@@ -25,10 +21,11 @@ export default function Communication() {
                     hover:scale-105
                     active:scale-95
                     text-white
+                    opacity-95
                     flex items-center justify-center
                     w-18 h-18
                     rounded-full
-                    shadow-xl
+                    shadow-2xl
                     transition-all
                     cursor-pointer
                 "
@@ -57,9 +54,9 @@ export default function Communication() {
                 >
                 <FaWhatsapp size={32}/>
             </a>
-            <button
-                aria-label="Enviar correo"
-                onClick={openForm}
+            <Link
+                aria-label="Acceder a formulario de contacto por medio de la página de contacto"
+                href="/contactenos#formulario"
                 className={`
                     absolute
                     right-3
@@ -77,7 +74,7 @@ export default function Communication() {
                 `}
                 >
                 <Mail size={32} />
-            </button>
+            </Link>
 
 
 

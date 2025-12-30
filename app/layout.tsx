@@ -1,21 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google"
+import { Playfair_Display } from "next/font/google"
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const geist = Geist({
   subsets: ["latin"],
-});
+  variable: "--font-sans",
+})
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const playfair = Playfair_Display({
   subsets: ["latin"],
-});
-
-export const metadata: Metadata = {
-title: "Ladrillos Sur | Colombia",
-  description: "Ladrillos Sur S.A.S - Ladrillos de calidad para tus proyectos",
-};
+  variable: "--font-serif",
+})
 
 export default function RootLayout({
   children,
@@ -25,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geist.variable} ${playfair.variable} antialiased`}
       >
         {children}
       </body>
