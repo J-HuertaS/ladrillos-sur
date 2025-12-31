@@ -55,7 +55,8 @@ export default function Navbar(){
                         <li><Link href="/" className={`${navLinkBase} ${navLinkHover}`}>Inicio</Link></li>
                         <li><Link href="/productos" className={`${navLinkBase} ${navLinkHover}`}>Productos</Link></li>
                         <li><Link href="/quienes-somos" className={`${navLinkBase} ${navLinkHover}`}>Nosotros</Link></li>
-                        <li><Link href="/proyectos" className={`${navLinkBase} ${navLinkHover}`}>Proyectos</Link></li>
+                        {/* <li><Link href="/proyectos" className={`${navLinkBase} ${navLinkHover}`}>Proyectos</Link></li> */}
+                        
                         <li>
                             <Link href="/contactenos" 
                                 aria-label="Dirigirse a página de contacto"
@@ -91,7 +92,7 @@ export default function Navbar(){
                         <li><Link href="/" className={`${navLinkBase} ${navLinkHover}`} onClick={()=>setIsMenuOpen(!isMenuOpen)}>Inicio</Link></li>
                         <li><Link href="/productos" className={`${navLinkBase} ${navLinkHover}`} onClick={()=>setIsMenuOpen(!isMenuOpen)}>Productos</Link></li>
                         <li><Link href="/quienes-somos" className={`${navLinkBase} ${navLinkHover}`} onClick={()=>setIsMenuOpen(!isMenuOpen)}>Nosotros</Link></li>
-                        <li><Link href="/proyectos" className={`${navLinkBase} ${navLinkHover}`} onClick={()=>setIsMenuOpen(!isMenuOpen)}>Proyectos</Link></li>
+                        {/* <li><Link href="/proyectos" className={`${navLinkBase} ${navLinkHover}`} onClick={()=>setIsMenuOpen(!isMenuOpen)}>Proyectos</Link></li> */}
                         <li><Link href="/contactenos" className={`${navLinkBase} ${navLinkHover}`} onClick={()=>setIsMenuOpen(!isMenuOpen)}>Contacto</Link></li>
                 </ul>
             </nav>

@@ -28,12 +28,14 @@ export default function Footer1(){
                         className="hover:text-[var(--color-primary)] w-fit">
                         Nuestra Historia
                         </Link>
+                        {/*
                         <Link 
                         href="/proyectos"
                         aria-label="Dirigirse a nuestra página de proyectos"
                         className="hover:text-[var(--color-primary)] w-fit">
                         Obras de Referencia
                         </Link>
+                        */}
                         <a 
                         href="https://wa.me/573125216075"
                         target="_blank"
